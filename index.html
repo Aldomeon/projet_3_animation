@@ -12,47 +12,61 @@
 <body>
     
     <header>
-        <img src="assets/images/logo/ohmyfood.png" alt="Oh My Food Logo">
-
-        <form action="">
-            <label for=""><i class="fa-solid fa-location-dot"></i></label>
-            <input type="search">
-        </form>
-        <div>
-        <h1>Réserver le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-
-                <div class="btn__header">Explorer nos restaurants</div>
-        </div>
         
-        <div class="instructions">
-            <h2>Fonctionnement</h2>
-
-            <div class="btn__fonctionnement">
-                <div class="btn__fonctionnement--border">
-                    <div class="num_fonctionnement">1</div>
-                    <div class="icon__fonctionnement"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                    <div class="instru_fonctionnement">Choississez un restaurant</div>
-                </div>
+        <div class="header-accueil">
+            <!-- LOGO -->
+            <div class="header-logo">
+                <img src="assets/images/logo/ohmyfood.png" alt="Oh My Food Logo">
             </div>
-            <div class="btn__fonctionnement">
-                <div class="btn__fonctionnement--margin">
-                    <div class="num_fonctionnement">2</div>
-                    <div class="icon__fonctionnement"><i class="fa-solid fa-list-ul"></i></div>
-                    <div class="instru_fonctionnement">Dégustez au restaurant</div>
-                </div>
-                
+            <!-- BARRE DE RECHERCHE -->
+            <div class="header-search">   
+                <form action="" class="header-search--form">
+                    <label for=""><i class="fa-solid fa-location-dot"></i></label>
+                    <input class="header-search--bar" type="search" placeholder="Paris, Belleville">
+                </form>
             </div>
-            <div class="btn__fonctionnement">
-                <div class="btn__fonctionnement--margin">
-                    <div class="num_fonctionnement">3</div>
-                    <div class="icon__fonctionnement"><i class="fa-solid fa-store"></i></div>
-                    <div class="instru_fonctionnement">Dégustez au restaurant</div>
+            <!-- INFO -->
+            <div class="header-info header-info--border">
+                <div class="header__text">
+                    <h1>Réserver le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                </div>
+                <div class="header__btn header__btn--border">
+                    <p>Explorer nos restaurants</p>
                 </div>
             </div>
         </div>
         
-
+        <!-- FONCTIONNEMENT -->
+        <div class="header-instructions">
+            <div class="instruction__title">
+                <h2>Fonctionnement</h2>
+            </div>
+            <div class="main__container__instructions">
+                <div class="instruction__btn">
+                    <div class="instruction__btn--border instruction__btn--flex instruction__btn--animation">
+                        <div class="num__fonctionnement">1</div>
+                        <div class="icon__fonctionnement"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="instru_fonctionnement">Choississez un restaurant</div>
+                    </div>
+                </div>
+                <div class="instruction__btn">
+                    <div class="instruction__btn--border instruction__btn--flex instruction__btn--animation">
+                        <div class="num__fonctionnement">2</div>
+                        <div class="icon__fonctionnement"><i class="fa-solid fa-list-ul"></i></div>
+                        <div class="instru_fonctionnement">Dégustez au restaurant</div>
+                    </div>
+                </div>
+                <div class="instruction__btn">
+                    <div class="instruction__btn--border instruction__btn--flex instruction__btn--animation">
+                        <div class="num__fonctionnement">3</div>
+                        <div class="icon__fonctionnement"><i class="fa-solid fa-store"></i></div>
+                        <div class="instru_fonctionnement">Dégustez au restaurant</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </header>
 
     <main class="menus">
@@ -75,8 +89,9 @@
         
     </main>
 
-    <footer>
-        <div><img src="assets/images/logo/ohmyfood.png" alt=""></div>
+    <footer class="footer">
+        <div class="footer__title">
+            <h2>ohmyfood</h2>
         <div>
             <div>
                 <div><i class="fa-solid fa-utensils"></i></div>
@@ -89,8 +104,6 @@
             <div><a href="#">Mentions légales</a></div>
             <div><a href="mailto:paris-contact@ohmyfood.com">Contact</a></div>
         </div>
-        
-        
     </footer>
 
 </body>
