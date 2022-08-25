@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  margin: 0 auto;
-}
-
 .header {
   margin-bottom: 30px;
 }
@@ -25,8 +13,7 @@ body {
 }
 .header-logo img {
   width: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header-search {
@@ -86,21 +73,6 @@ body {
   font-size: 18px;
 }
 
-.header__btn {
-  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
-  width: 250px;
-  color: white;
-  font-size: 1.1rem;
-  border-radius: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.336);
-}
-.header__btn--border {
-  padding: 10px;
-}
-.header__btn p {
-  margin: 0;
-}
-
 .box__title {
   margin-left: 30px;
   margin-bottom: 30px;
@@ -114,37 +86,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.instruction__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.instruction__btn--border {
-  width: 320px;
-  border: 1px solid transparent;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 20px;
-  margin-bottom: 25px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.192);
-  background-color: #f6f6f6;
-}
-.instruction__btn--flex {
-  display: flex;
-}
-.instruction__btn--animation, .instruction__btn .icon__fonctionnement {
-  transition: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.instruction__btn--animation:hover {
-  background-color: #f5edff;
-}
-.instruction__btn--animation:hover .icon__fonctionnement {
-  color: #9356DC;
 }
 
 .num__fonctionnement {
@@ -177,9 +118,95 @@ body {
   font-weight: bold;
 }
 
-.menus {
-  padding-bottom: 50px;
-  background-color: #f5f5f5;
+.footer {
+  background-color: #373737;
+}
+
+.footer__container {
+  margin-left: 30px;
+}
+.footer__container .footer__title, .footer__container .footer__links {
+  padding-top: 20px;
+}
+
+.footer__links {
+  padding-bottom: 30px;
+}
+.footer__links a {
+  text-decoration: none;
+}
+.footer__links i, .footer__links a {
+  color: rgb(255, 255, 255);
+}
+.footer__links--flex {
+  display: flex;
+  align-items: center;
+}
+.footer__links--margin {
+  margin-bottom: 5px;
+}
+
+.footer-icon {
+  width: 25px;
+}
+
+.footer__title h2 {
+  font-family: Shrikhand;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.header__btn {
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  width: 250px;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.336);
+}
+.header__btn--border {
+  padding: 10px;
+}
+.header__btn p {
+  margin: 0;
+}
+
+.instruction__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.instruction__btn--border {
+  width: 320px;
+  border: 1px solid transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.192);
+  background-color: #f6f6f6;
+}
+.instruction__btn--flex {
+  display: flex;
+}
+.instruction__btn--animation, .instruction__btn .icon__fonctionnement {
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .disabled {
@@ -206,8 +233,7 @@ body {
   border-radius: 25px 25px 0 0;
 }
 .card__img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 110%;
   position: absolute;
   top: 50%;
@@ -258,44 +284,16 @@ body {
   margin-right: 22.5px;
 }
 
-.footer {
-  background-color: #373737;
+.instruction__btn--animation:hover {
+  background-color: #f5edff;
+}
+.instruction__btn--animation:hover .icon__fonctionnement {
+  color: #9356DC;
 }
 
-.footer__container {
-  margin-left: 30px;
-}
-.footer__container .footer__title, .footer__container .footer__links {
-  padding-top: 20px;
-}
-
-.footer__links {
-  padding-bottom: 30px;
-}
-.footer__links a {
-  text-decoration: none;
-}
-.footer__links i, .footer__links a {
-  color: rgb(255, 255, 255);
-}
-.footer__links--flex {
-  display: flex;
-  align-items: center;
-}
-.footer__links--margin {
-  margin-bottom: 5px;
-}
-
-.footer-icon {
-  width: 25px;
-}
-
-.footer__title h2 {
-  font-family: Shrikhand;
-  color: white;
-  font-weight: normal;
-  font-size: 20px;
-  margin: 0;
+.menus {
+  padding-bottom: 50px;
+  background-color: #f5f5f5;
 }
 
 @media only screen and (min-width: 993px) {
@@ -306,4 +304,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

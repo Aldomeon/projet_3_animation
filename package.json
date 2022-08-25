@@ -1,0 +1,19 @@
+{
+  "name": "projet_3_sass_animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:./css/style.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aldomeon/projet_3_animation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aldomeon/projet_3_animation/issues"
+  },
+  "homepage": "https://github.com/Aldomeon/projet_3_animation#readme"
+}

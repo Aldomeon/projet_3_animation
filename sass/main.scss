@@ -1,0 +1,25 @@
+@import "./Utils/_variables";
+@import "./Layout/header";
+@import "./Layout/footer";
+@import "./Layout/nav";
+@import "./Base/typographie";
+@import "./Composants/button";
+@import "./Composants/cards";
+@import "./Composants/animation";
+@import "./Pages/accueil.scss";
+
+
+
+
+
+@media #{$querriesDesktop-up} {
+
+   .box__title{
+    text-align: center;
+   }
+
+   .main__container__instructions{
+    flex-direction: row;
+    justify-content: space-around;
+   }
+}
