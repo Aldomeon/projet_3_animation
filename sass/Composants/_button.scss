@@ -1,14 +1,14 @@
 
 
-.header__btn {
+.btn-main {
     background-image: linear-gradient(to top left, $primary, $secondary);
     width: 250px;
     color: white;
     font-size: 1.1rem;
-    border-radius: 20px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.336);
     &--border {
         padding: 10px;
+        border-radius: 20px;
     }
     p   {
         margin: 0;
@@ -38,4 +38,16 @@
         transition-timing-function: ease-in-out;
     }
    
+}
+
+.btn-main--order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    p{
+        margin: 0;
+        font-size: 18px;
+    }
 }
