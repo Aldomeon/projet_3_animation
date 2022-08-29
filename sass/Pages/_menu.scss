@@ -1,11 +1,11 @@
-.header-accueil--menu{
-    position: relative;
-}
+
 
 .header-accueil--menu__icon{
-    position: absolute;
-    left: 40px;
-    top: 30px;
+        position: absolute;
+        left: 40px;
+        top: 30px;
+        width: 20px;
+        height: 20px;
 }
 
 
@@ -70,7 +70,6 @@
 
 .container-menu--repas{
     height: 65px;
-    
     border-radius: 20px;
     display: flex;
     align-items: center;

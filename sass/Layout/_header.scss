@@ -94,12 +94,22 @@
     h2 {
         margin: 0;
     }
+
+    @media #{$querriesDesktop-up} {
+         text-align: center;
+        }
 }
 
 .main__container__instructions{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    @media #{$querriesDesktop-up} {
+         flex-direction: row;
+         justify-content: space-around;
+     }
+
 }
 
 .num__fonctionnement{

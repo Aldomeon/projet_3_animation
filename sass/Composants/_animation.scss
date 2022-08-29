@@ -1,6 +1,45 @@
-.instruction__btn--animation:hover {
+
+.btn-instruction--animation:hover {
     background-color: #f5edff;
     .icon__fonctionnement{
         color: #9356DC;
     }
 }
+
+.animation-slide--repas1{
+    animation : Slide 1s;
+}
+
+.animation-slide--repas2{
+    animation : Slide 1.5s; 
+}
+
+.animation-slide--repas3{
+    animation : Slide 2s;
+}
+
+@keyframes Slide {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+.animation-rotate--icon{
+    animation : rotation 1s
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+

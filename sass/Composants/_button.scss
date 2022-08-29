@@ -1,21 +1,32 @@
 
-
 .btn-main {
     background-image: linear-gradient(to top left, $primary, $secondary);
     width: 250px;
     color: white;
-    font-size: 1.1rem;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.336);
-    &--border {
+    &--explorer {
         padding: 10px;
         border-radius: 20px;
-    }
-    p   {
-        margin: 0;
+        p {
+            margin: 0;
+            font-size: 1.1rem;
         }
+    }
+    
+    &--order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        border-radius: 30px;
+        p {
+            margin: 0;
+            font-size: 20px;
+        }
+    }
 }
 
-.instruction__btn {
+.btn-instruction {
     display: flex;
     justify-content:center;
     align-items:center;
@@ -30,24 +41,12 @@
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.192);
         background-color: #f6f6f6;
     }
-    &--flex{
+    &--flex {
         display: flex;
     }
     &--animation, .icon__fonctionnement {
         transition: 0.2s;
         transition-timing-function: ease-in-out;
     }
-   
 }
 
-.btn-main--order{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 30px;
-    p{
-        margin: 0;
-        font-size: 18px;
-    }
-}
