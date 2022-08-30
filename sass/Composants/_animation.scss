@@ -1,4 +1,7 @@
 
+
+// animation bouton fonctionnement
+
 .btn-instruction--animation:hover {
     background-color: #f5edff;
     .icon__fonctionnement{
@@ -6,21 +9,23 @@
     }
 }
 
+// animation slide page MENU
+
 .animation-slide--repas1{
-    animation : Slide 1s;
+    animation : Slide 1.3s;
 }
 
 .animation-slide--repas2{
-    animation : Slide 1.5s; 
+    animation : Slide 1.6s; 
 }
 
 .animation-slide--repas3{
-    animation : Slide 2s;
+    animation : Slide 1.9s;
 }
 
 @keyframes Slide {
     from {
-        transform: translateY(20px);
+        transform: translateY(30px);
         opacity: 0;
     }
     to {
@@ -28,6 +33,9 @@
         opacity:1;
     }
 }
+
+
+// animation check slide order 
 
 .animation-rotate--icon{
     animation : rotation 1s
@@ -41,5 +49,43 @@
     to {
         transform: rotate(0deg);
     }
+}
+
+// animation coeur page d'accueil
+// faire une fonction ? ?? 
+
+.card__icon{
+    &:hover {
+        .heart-solid{
+            visibility: visible;
+            animation: couleurHeartActivated 1s ease-out ;
+        }
+        .heart-regular{
+            visibility: hidden;
+            animation: couleurHeartDisabled 0.5s ease-out ;
+        }    
+    }
+    &:not(:hover){
+        .heart-regular{
+            visibility: visible;
+            animation: couleurHeartActivated 1s ease-out;
+        }
+        .heart-solid{
+            animation: couleurHeartDisabled 1s;
+        }
+    }
+}
+
+@keyframes couleurHeartActivated {
+    0% {opacity:0}
+    100%{opacity:1}
+}
+
+@keyframes couleurHeartDisabled {
+    0% {opacity:1}
+    25% {opacity:0.25}
+    50% {opacity:0.5}
+    75% {opacity:0.75}
+    100% {opacity:0}
 }
 

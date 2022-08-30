@@ -71,6 +71,25 @@
             }
     }
    .card__icon {
-    margin-right: $marginCardTitle*1.5;
+    margin-right: $marginCardTitle*1.5; 
+   }
+}
+
+
+// spécificité superposition des coeurs
+.card__icon{
+    position: relative;
+    .heart-position{
+        position: absolute;
+        top: -15px;
+        left: -30px;
+    }
+    .heart-solid {
+        visibility: hidden;
+        color: $primary;
+        transition: opacity 1s ease-out;
+    } 
+    .heart-regular{
+        transition: opacity 1s ease-out;
     }
 }
