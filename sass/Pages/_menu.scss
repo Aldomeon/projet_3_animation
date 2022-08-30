@@ -37,6 +37,8 @@
 
 .container-menu--restaurant{
     padding: 15px;
+    width: 390px;
+    margin: 0 auto;
 }
 
 .restaurant__title{
@@ -78,7 +80,8 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.192);
     
     .menu-title{
-        width: 60%;
+        width: 80%;
+        min-width: 5%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -103,29 +106,37 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        width: 25%;
+        width: 40px;
+        min-width: 40px;
         height: 100%;
-        padding: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
         p{
             margin: 0;
             font-weight: bold;
             font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     .menu-checked{
         height: 100%;
-        width: 50px;
+        width: 0;
+        min-width: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $tertiaire;
-        transition: 1s;
+        opacity: 0;
+        transition: 0.8s;
         i {
             display: flex;
             justify-content:center;
             align-items: center;
-            width: 15px;
-            height: 15px;
+            width: 18px;
+            height: 18px;
             background-color: white;
             color :$tertiaire;
             border-radius: 50%;
@@ -133,14 +144,35 @@
     }
 }
 
-.container-menu--repas:hover{
+
+
+
+
+.container-menu--repas{
     cursor: pointer;
+    &:hover{
         .menu-checked{
-        opacity: 1; 
+            opacity: 1;
+            width: 60px;
+            min-width: 60px;
+            i{
+                animation: rotation 0.5s ease-out;
+            }
+        }
         
     }
-} 
+}
 
+@keyframes slideRight {
+    from { 
+        width: 0px; 
+        opacity: 1;
+    }
+    to { 
+        width: 80px;
+        opacity: 1;
+     }
+}
 
 
 .order{

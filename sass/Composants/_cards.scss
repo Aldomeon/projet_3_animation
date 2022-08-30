@@ -87,9 +87,6 @@
     .heart-solid {
         visibility: hidden;
         color: $primary;
-        transition: opacity 1s ease-out;
+        animation: couleurHeartDisabled 1s ease-out;
     } 
-    .heart-regular{
-        transition: opacity 1s ease-out;
-    }
 }
