@@ -11,21 +11,29 @@
 
 // animation slide page MENU
 
+// faire une mixin pour l'animation de delai
+
 .animation-slide--repas1{
-    animation : Slide 1.3s;
+    animation : Slide 0.8s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both; 
 }
 
 .animation-slide--repas2{
-    animation : Slide 1.6s; 
+    animation : Slide 0.8s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both; 
 }
 
 .animation-slide--repas3{
-    animation : Slide 1.9s;
+    animation : Slide 0.8s;
+    animation-delay: 0.7s;
+    animation-fill-mode: both; 
 }
 
 @keyframes Slide {
     from {
-        transform: translateY(30px);
+        transform: translateY(20px);
         opacity: 0;
     }
     to {
@@ -34,15 +42,25 @@
     }
 }
 
+// animation checked slide order 
 
-// animation check slide order 
-.animation-rotate--icon{
-    animation : rotation 1s
+.container-menu--repas{
+    cursor: pointer;
+    &:hover{
+        .menu-checked{
+            opacity: 1;
+            width: 60px;
+            min-width: 60px;
+            i{
+                animation: rotation 0.5s ease-out;
+            }
+        }
+    }
 }
 
 @keyframes rotation {
     from {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 
     to {
@@ -52,26 +70,24 @@
 
 
 // animation coeur page d'accueil
-// faire une fonction ? ?? 
 
 .card__icon{
     &:hover {
         .heart-solid{
             visibility: visible;
-            animation: couleurHeartActivated 1s ease-out ;
+            animation: couleurHeartActivated 2s;
+            
         }
         .heart-regular{
             visibility: hidden;
-            animation: couleurHeartDisabled 0.5s ease-out ;
+            animation: couleurHeartDisabled 0.3s;
         }    
     }
     &:not(:hover){
         .heart-regular{
             visibility: visible;
-            animation: couleurHeartActivated 1s ease-out;
-        }
-        .heart-solid{
-            animation: couleurHeartDisabled 1s;
+            animation: couleurHeartActivated 1s;
+            
         }
     }
 }
@@ -88,4 +104,6 @@
     75% {opacity:0.75}
     100% {opacity:0}
 }
+
+
 

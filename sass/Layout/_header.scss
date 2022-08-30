@@ -1,4 +1,5 @@
 // HEADER
+// _________ ACCUEIL PAGE ACCUEIL ___
 
 .header{
     margin-bottom: 30px;
@@ -19,8 +20,8 @@
     &--box{
         box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
     }
-    &--position{
-        position: relative;
+    &--position__menu{
+        margin-right: 50px;
     }
 }
 
@@ -140,4 +141,35 @@
     justify-content:center;
     align-items: center;
     font-weight: bold;
+}
+
+
+
+// HEADER 
+// _______________ PAGE MENU ________ 
+// 
+
+.header-accueil--menu{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-accueil--menu__icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.img__restaurant{
+    width: 100%;
+    img{
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: -1;
+    }
 }
