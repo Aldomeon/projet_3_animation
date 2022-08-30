@@ -17,6 +17,9 @@
 .header-logo--box {
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
 }
+.header-logo--position__accueil {
+  position: relative;
+}
 .header-logo--position__menu {
   margin-right: 50px;
 }
@@ -25,8 +28,6 @@
   background-color: #e9e9e9;
   display: flex;
   justify-content: center;
-  position: relative;
-  z-index: -1;
 }
 .header-search--form {
   display: flex;
@@ -39,8 +40,9 @@
 }
 .header-search--bar {
   width: 200px;
+  height: 30px;
   background-color: #e9e9e9;
-  border: none;
+  border-color: transparent;
 }
 
 .header-search--icon {
@@ -49,6 +51,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
 }
 
 .header-info {
@@ -199,6 +207,136 @@
   margin: 0;
 }
 
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(196, 126, 199, 0.8);
+  backdrop-filter: blur(15px);
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: finishLoader 1s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+@keyframes finishLoader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.container-light--box {
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-light--box::before, .container-light--box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #00FFFF, #EAADEA, #FF1CAE, #70DBDB, #ADEAEA, #007FFF, #00FF00, #00FF7F, #7FFF00);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: 500%;
+  z-index: -1;
+  transform: scale(1.02);
+  animation: animate 20s infinite;
+}
+
+.container-light--box::after {
+  filter: blur(20px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.slogan-ohmyfood h1, .slogan-loading h1 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.slogan-ohmyfood h1 {
+  font-size: 38px;
+}
+
+.slogan-loading h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.dots-loader {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.dot-loader {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.dot-loader--1 {
+  animation: pulse1 400ms infinite ease alternate;
+}
+.dot-loader--2 {
+  animation: pulse2 600ms infinite ease alternate;
+}
+.dot-loader--3 {
+  animation: pulse3 800ms infinite ease alternate;
+}
+
+@keyframes pulse1 {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes pulse2 {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+@keyframes pulse3 {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
 * {
   box-sizing: border-box;
 }
