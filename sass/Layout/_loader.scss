@@ -107,11 +107,11 @@ $sizeBoxLoader: 250px;
     }
 
     &--2{
-        animation: pulse2 600ms infinite ease alternate;
+        animation: pulse2 700ms infinite ease alternate;
     }
 
     &--3{
-        animation: pulse3 800ms infinite ease alternate;
+        animation: pulse3 400ms infinite ease alternate;
     }
 }
 
@@ -122,10 +122,10 @@ $sizeBoxLoader: 250px;
 
   @keyframes pulse2 {
     from { transform: scale(0.5); }
-    to { transform: scale(1.3); }
+    to { transform: scale(1.5); }
   }
 
   @keyframes pulse3 {
-    from { transform: scale(0.8); }
-    to { transform: scale(1.2); }
+    from { transform: scale(1.2); }
+    to { transform: scale(0.7); }
   }

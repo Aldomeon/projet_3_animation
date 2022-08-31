@@ -31,6 +31,12 @@
     animation-fill-mode: both; 
 }
 
+.animation-slide--repas4{
+    animation : Slide 0.8s;
+    animation-delay: 0.9s;
+    animation-fill-mode: both; 
+}
+
 @keyframes Slide {
     from {
         transform: translateY(20px);
