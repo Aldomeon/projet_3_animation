@@ -177,6 +177,9 @@ input::placeholder{
     display: flex;
     justify-content:center;
     align-items:center;
+    @media #{$querriesDesktopTablette-up} {
+        box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.3);
+       }
 }
 
 .header-accueil--menu__icon{
