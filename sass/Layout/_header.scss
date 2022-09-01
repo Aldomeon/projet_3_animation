@@ -28,7 +28,7 @@
     }
 }
 
-// HEADER SEARCH
+// HEADER __ SEARCH
 
 .header-search {
     background-color: $backSearch;
@@ -67,7 +67,7 @@ input::placeholder{
 }
 
 
-// HEADER INFO
+// HEADER __ INFO
 
 .header-info {
     text-align: center;
@@ -96,7 +96,19 @@ input::placeholder{
     }
 }
 
-// FONCTIONNEMENT
+// HEADER __ FONCTIONNEMENT
+
+
+.header-instructions {
+    @media #{$querriesDesktop-up} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+}
+
 
 .box__title {
     margin-left: 30px;
@@ -106,8 +118,9 @@ input::placeholder{
         margin: 0;
     }
 
-    @media #{$querriesDesktop-up} {
+    @media #{$querriesDesktopTablette-up} {
          text-align: center;
+         margin-left: 0px;
         }
 }
 
@@ -119,6 +132,7 @@ input::placeholder{
     @media #{$querriesDesktop-up} {
          flex-direction: row;
          justify-content: space-around;
+         gap: 30px;
      }
 
 }

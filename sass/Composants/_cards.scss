@@ -12,8 +12,11 @@
     margin-bottom: 20px;
     a {
     text-decoration: none;
-}
+    }
 
+    @media #{$querriesTablette-up}{
+            width: $widthCardQuerriesTablette;
+        }
 }
 .card__img{
     width: $widthCard;
@@ -45,6 +48,18 @@
             font-weight: bold;
             color: #008766;
         }
+    }
+
+    @media #{$querriesTablette-up}{
+        width: $widthCardQuerriesTablette;
+        height: calc($widthCardQuerriesTablette/2);
+    }
+
+    @media #{$querriesDesktop-up}{
+        height: 350px; 
+        img{
+            min-height: 100%;
+        }      
     }
 }
 
