@@ -31,4 +31,11 @@ $querriesDesktop-up: "only screen and (min-width: #{$querriesDesktop-min})";
 // variable tablette et querries_DESKTOP_&_TABLETTE 
 $querriesDesktopTablette-up : "only screen and (min-width: #{$querriesTablette-min})";
 
+// Variable Mixin pour animation Slide // 
+// Animation Delay
+$DelaySlideUp: 0.3s;
+
+// variable pour le Loader
+$borderLoader: 50%;
+$sizeBoxLoader: 250px;
 

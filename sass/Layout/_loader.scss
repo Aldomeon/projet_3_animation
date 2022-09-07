@@ -1,11 +1,7 @@
 
-$borderLoader: 50%;
-$sizeBoxLoader: 250px;
-
 .loader{
     width: 100%;
     height: 100vh;
-    // background-image: linear-gradient(to top left, $primary, $secondary);
     background-color: rgba(196, 126, 199, 0.8);
     backdrop-filter: blur(15px);
     position: fixed;
@@ -31,7 +27,7 @@ $sizeBoxLoader: 250px;
 .container-light--box{
     width: $sizeBoxLoader;
     height: $sizeBoxLoader;
-    background-image: linear-gradient(to top left, $primary, $secondary);
+    @include backgroundGradient;
     position: relative;
     border-radius: $borderLoader;
     display: flex;

@@ -15,7 +15,7 @@
   object-fit: cover;
 }
 .header-logo--box {
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 .header-logo--position__accueil {
   position: relative;
@@ -159,7 +159,7 @@ input::placeholder {
 }
 @media only screen and (min-width: 768px) {
   .header-accueil--menu {
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -379,7 +379,7 @@ body {
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   width: 250px;
   color: white;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.336);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   border: transparent;
   transition: all 0.5s;
   cursor: pointer;
@@ -423,7 +423,7 @@ body {
   padding-bottom: 20px;
   border-radius: 20px;
   margin-bottom: 25px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.192);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   background-color: #f6f6f6;
 }
 .btn-instruction--flex {
@@ -530,6 +530,7 @@ body {
 
 .card__icon {
   position: relative;
+  cursor: pointer;
 }
 .card__icon .heart-position {
   position: absolute;
@@ -550,26 +551,26 @@ body {
 
 .animation-slide--repas1 {
   animation: Slide 0.8s;
-  animation-delay: 0.3s;
   animation-fill-mode: both;
+  animation-delay: 0.3s;
 }
 
 .animation-slide--repas2 {
   animation: Slide 0.8s;
-  animation-delay: 0.5s;
   animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 
 .animation-slide--repas3 {
   animation: Slide 0.8s;
-  animation-delay: 0.7s;
   animation-fill-mode: both;
+  animation-delay: 0.7s;
 }
 
 .animation-slide--repas4 {
   animation: Slide 0.8s;
-  animation-delay: 0.9s;
   animation-fill-mode: both;
+  animation-delay: 0.9s;
 }
 
 @keyframes Slide {
@@ -846,13 +847,6 @@ body {
   align-items: center;
   padding: 50px 50px 100px 50px;
   background-color: #f5f5f5;
-}
-
-@media only screen and (min-width: 993px) {
-  .main__container__instructions {
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

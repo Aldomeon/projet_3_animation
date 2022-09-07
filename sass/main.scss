@@ -1,4 +1,5 @@
 @import "./Utils/_variables";
+@import "./Utils/_mixins";
 @import "./Layout/_header";
 @import "./Layout/_footer";
 @import "./Layout/_nav";
@@ -10,12 +11,3 @@
 @import "./Pages/_accueil";
 @import "./Pages/_menu";
 
-
-
-@media #{$querriesDesktop-up} {
-
-   .main__container__instructions{
-    flex-direction: row;
-    justify-content: space-around;
-   }
-}

@@ -1,9 +1,9 @@
 
 .btn-main {
-    background-image: linear-gradient(to top left, $primary, $secondary);
+    @include backgroundGradient;
     width: 250px;
     color: white;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.336);
+    @include boxShadow(0.3);
     border: transparent;
     transition: all 0.5s;
     cursor: pointer;
@@ -31,7 +31,7 @@
 
 .btn-main:hover{
     transform: scale(1.05);
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+    @include boxShadow(0.7);
 }
 
 .btn-instruction {
@@ -47,7 +47,7 @@
         padding-bottom: 20px;
         border-radius: 20px;
         margin-bottom: 25px;
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.192);
+        @include boxShadow(0.3);
         background-color: #f6f6f6;
     }
     &--flex {

@@ -1,0 +1,21 @@
+
+// pour l'animation delay Composants/_animation.scss
+@mixin animationTime($time) {
+    animation-delay: calc($DelaySlideUp + $time);
+    
+}
+
+// pour la couleur du background color
+// Composants/_loader.scss
+// Composants/_button.scss
+@mixin backgroundGradient {
+    background-image: linear-gradient(to top left, $primary, $secondary);
+}
+
+// pour les box-shadow 
+// _button.scss
+// _header.scss
+
+@mixin boxShadow($opacity) {
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,$opacity);
+}
